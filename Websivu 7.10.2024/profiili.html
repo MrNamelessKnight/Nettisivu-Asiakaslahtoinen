@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Käyttäjän profiili</title>
+    <link rel="stylesheet" href="profiili.css">
+</head>
+<body>
+    <!-- Yläpalkki -->
+    <header>
+        <div class="logo">
+            <img src="taipelit1.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="etusivu.html">Etusivu</a></li>
+                <li><a href="#">Pelit</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                <li><a href="#">Asiakastuki</a></li>
+                <li><a href="#">Tuki</a></li>
+                <li><a href="register.html">Rekisteröidy</a></li>
+            </ul>
+        </nav>
+        <div class="profile-link">
+            <a href="profiili.html">Profiili</a>
+        </div>
+    </header>
+
+    <!-- Profile Content -->
+    <main>
+        <div class="profile-section">
+            <h1>Käyttäjän profiili</h1>
+            <form id="loginForm">
+                <div>
+                    <label for="username">Käyttäjänimi</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Salasana</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Kirjaudu sisään</button>
+            </form>
+            
+            <!-- New Registration Button -->
+            <button onclick="window.location.href='register.html'" class="login-button">Rekisteröidy</button>
+        </div>
+
+            <!-- After Login Section -->
+            <div id="user-section" style="display: none;">
+                <p>Tervetuloa, <span id="user-name"></span></p>
+                <br><br/>
+                <button id="logoutButton" class="login-button">Kirjaudu ulos</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="taipelit1.png" alt="Logo">
+        </div>
+        <div class="footer-text">
+            <p>Tekstiä | Tekstiä | Tekstiä | Tekstiä | Tekstiä</p>
+        </div>
+    </footer>
+
+    <script src="profiili.js"></script>
+</body>
+</html>

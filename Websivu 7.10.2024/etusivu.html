@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAI Pelit Oy</title>
+    <link rel="stylesheet" href="etusivu.css">
+</head>
+<body>
+
+    <!-- Yläpalkki -->
+    <header>
+        <div class="logo">
+            <img src="taipelit1.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="etusivu.html">Etusivu</a></li>
+                <li><a href="#">Pelit</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                <li><a href="#">Asiakastuki</a></li>
+                <li><a href="#">Tuki</a></li>
+                <li><a href="register.html">Rekisteröidy</a></li>
+            </ul>
+        </nav>
+        <div class="profile-link">
+            <a href="profiili.html">Profiili</a>
+        </div>
+    </header>
+
+    <!-- Pelit -->
+    <main>
+        <div class="games-section">
+            <div class="game big-game">Esittelypeli</div>
+            <div class="small-games">
+                <div class="game small-game">Peli 1</div>
+                <div class="game small-game">Peli 2</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alatunniste -->
+    <footer>
+        <div class="footer-logo">
+            <img src="taipelit1.png" alt="Logo">
+        </div>
+        <div class="footer-text">
+            <p>Tekstiä | Tekstiä | Tekstiä | Tekstiä | Tekstiä</p>
+        </div>
+    </footer>
+
+    <script>
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            const storedUsername = localStorage.getItem('username');
+            const profileLink = document.getElementById('profileLink');
+        });
+    </script>
+
+</body>
+</html>

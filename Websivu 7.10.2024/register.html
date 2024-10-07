@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröinti</title>
+    <link rel="stylesheet" href="profiili.css"> <!-- Using the same CSS for styling -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="taipelit1.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="etusivu.html">Etusivu</a></li>
+                <li><a href="#">Pelit</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                <li><a href="#">Asiakastuki</a></li>
+                <li><a href="#">Tuki</a></li>
+                <li><a href="register.html">Rekisteröidy</a></li>
+            </ul>
+        </nav>
+        <div class="profile-link">
+            <a href="profiili.html">Profiili</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-section">
+            <h1>Rekisteröidy</h1>
+            <form id="registerForm">
+                <div>
+                    <label for="reg-username">Käyttäjänimi</label>
+                    <input type="text" id="reg-username" name="username" required>
+                </div>
+                <div>
+                    <label for="reg-email">Sähköposti</label>
+                    <input type="email" id="reg-email" name="email" required>
+                </div>
+                <div>
+                    <label for="reg-password">Salasana</label>
+                    <input type="password" id="reg-password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Rekisteröidy</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="taipelit1.png" alt="Logo">
+        </div>
+        <div class="footer-text">
+            <p>Tekstiä | Tekstiä | Tekstiä | Tekstiä | Tekstiä</p>
+        </div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>
