@@ -1,0 +1,173 @@
+/* Perusasetukset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcc00;
+  padding: 15px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a,
+header .profile-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header .profile-link a:hover {
+  color: #555;
+}
+
+header .logo img {
+  width: 180px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Perusasetukset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+
+  /* Yläpalkki */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 15px 20px;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a,
+  header .profile-link a {
+    text-decoration: none; /* Poistaa alaviivat kaikilta linkeiltä */
+    color: #000; /* Määrittää tekstin värin mustaksi */
+    font-size: 18px; /* Linkkien fonttikoko */
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+
+  /* Tämä on profiililinkille */
+  header nav ul li a,
+  header .profile-link a {
+    text-decoration: none; /* Poistaa alaviivan profiililinkiltä */
+    color: #000; /* Muuttaa profiililinkin värin mustaksi */
+    margin-left: 20px;
+    padding: 5px 5px;
+    transition: color 0.3s ease;
+  }
+
+  header nav ul li a:hover,
+  header .profile-link a:hover {
+    color: #555; /* Muuttaa profiililinkin värin hover-tilassa */
+  }
+
+  header .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  /* Pääosa */
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+
+  main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  /* Alatunniste */
+  footer {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .footer-text p {
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-text p {
+  font-size: 16px;
+  color: #000;
+}

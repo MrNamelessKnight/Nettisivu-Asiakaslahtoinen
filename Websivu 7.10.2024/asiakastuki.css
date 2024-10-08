@@ -1,200 +1,200 @@
 /* Perusasetukset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #333;
-    color: #fff;
-    line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  background-color: #333;
+  color: #fff;
+  line-height: 1.6;
 }
 
 /* Yläpalkki */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffcc00;
-    padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcc00;
+  padding: 15px 20px;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 header nav ul li a,
 header .profile-link a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 header nav ul li a:hover,
 header .profile-link a:hover {
-    color: #fff;
-    background-color: #000;
+  color: #fff;
+  background-color: #000;
 }
 
 header .logo img {
-    width: 180px;
-    height: auto;
+  width: 180px;
+  height: auto;
 }
 
 /* Pääosa - asiakastuki */
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .support-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1px;
-    background-color: #444;
-    border-radius: 10px;
-    position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: #444;
+  border-radius: 10px;
+  position: relative;
 }
 
 .support-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .support-box {
-    flex: 1;
-    min-width: 250px;
-    background-color: #555;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px; 
+  flex: 1;
+  min-width: 250px;
+  background-color: #555;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
 }
 .contact-support {
-    background-color: #666;
-    padding: 7px;
-    border-radius: 8px;
-    margin: 10px 0;
+  background-color: #666;
+  padding: 7px;
+  border-radius: 8px;
+  margin: 10px 0;
 }
 
 .contact-support h2 {
-    color: #ffcc00;
-    margin-bottom: 5px;
-    font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .contact-support p {
-    margin-bottom: 5px;
-    font-size: 14px;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .contact-support a {
-    color: #ffcc00;
-    text-decoration: underline;
-    font-size: 14px;
+  color: #ffcc00;
+  text-decoration: underline;
+  font-size: 14px;
 }
 
 .contact-support a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* Lomakkeen ryhmätyylit */
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 /* Syötekenttätyylit */
 .form-group input,
 .form-group textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .form-group textarea {
-    height: 80px;
-    resize: none;
+  height: 80px;
+  resize: none;
 }
 
 /* Lähetä-painikkeen tyylit */
 .submit-btn {
-    background-color: #ffcc00;
-    color: #000;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    max-width: 150px;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 150px;
 }
 
 .submit-btn:hover {
-    background-color: #e6b800;
+  background-color: #e6b800;
 }
 
 /* Resurssit */
 .resources ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .resources ul li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .resources a {
-    color: #ffcc00;
-    text-decoration: underline;
+  color: #ffcc00;
+  text-decoration: underline;
 }
 
 .resources a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Footer */
 footer {
-    background-color: #ffcc00;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-logo img {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 .footer-text p {
-    font-size: 16px;
-    color: #000;
+  font-size: 16px;
+  color: #000;
 }
 
 /* Responsiivisuus */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .support-container {
-        flex-direction: column;
-    }
+  .support-container {
+    flex-direction: column;
+  }
 }
