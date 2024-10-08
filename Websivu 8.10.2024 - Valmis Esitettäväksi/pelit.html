@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAI Pelit Oy</title>
+    <link rel="stylesheet" href="etusivu.css" />
+    <style>
+      canvas {
+        background-color: #000000;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #000000;
+      }
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      #scoreDisplay {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      #instructions {
+        font-size: 17.7px;
+        margin-top: 10px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Yläpalkki -->
+    <header>
+      <div class="logo">
+        <img src="taipelit1.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="etusivu.html">Etusivu</a></li>
+          <li><a href="pelit.html">Pelit</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <li><a href="asiakastuki.html">Asiakastuki</a></li>
+          <li><a href="register.html">Rekisteröidy</a></li>
+        </ul>
+      </nav>
+      <div class="profile-link">
+        <a href="profiili.html">Profiili</a>
+      </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <h1>Mato Peli</h1>
+      <p id="scoreDisplay">Pisteet: 0</p>
+      <canvas id="gameCanvas" width="1200" height="1200"></canvas>
+      <p id="instructions">Käytä nuolinäppäimiä liikkuaksesi | Paina 'R' aloittaaksesi alusta | Paina 'P' laittaaksesi peli tauolle</p>
+    </main>
+
+    <!-- Alatunniste -->
+    <footer>
+      <div class="footer-logo">
+        <img src="taipelit1.png" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        <p>Tekstiä | Tekstiä | Tekstiä | Tekstiä | Tekstiä</p>
+      </div>
+    </footer>
+
+    <!-- Sisällytä JavaScript Snake Game -->
+    <script src="matopeli.js"></script>
+
+    <script>
+      // Tarkista, onko käyttäjä kirjautuneena
+      document.addEventListener("DOMContentLoaded", function () {
+        const storedUsername = localStorage.getItem("username");
+        const profileLink = document.getElementById("profileLink");
+      });
+    </script>
+  </body>
+</html>
