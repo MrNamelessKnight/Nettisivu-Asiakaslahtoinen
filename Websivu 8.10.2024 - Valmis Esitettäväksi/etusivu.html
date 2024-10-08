@@ -27,20 +27,30 @@
     </header>
 
     <!-- Pelit -->
-    <main>
-      <div class="games-section">
-        <!-- Esittelypeli laatikko, johon on lisätty kuva -->
-        <div class="game big-game">
-          <h1>Esittelypeli</h1>
-          <img src="matopeli.png" alt="Esittelypeli kuva" id="esittelypeliImage" />
-        </div>
+    <div class="games-section">
+      <div class="game small-game">
+        <img src="tulossapian.png" alt="Peli 1 kuva" class="small-image" />
+      </div>
 
-        <div class="small-games">
-          <div class="game small-game">Peli 1</div>
-          <div class="game small-game">Peli 2</div>
+      <div class="game big-game">
+        <h1>Esittelypeli</h1>
+        <a href="pelit.html">
+          <img
+            src="matopeli.png"
+            alt="Esittelypeli kuva"
+            id="esittelypeliImage"
+          />
+        </a>
+        <div class="game-info">
+          <h2>Tietoa</h2>
+          <p>Matopeli, jossa ohjaat matoa, joka kasvaa syödessään.</p>
         </div>
       </div>
-    </main>
+
+      <div class="game small-game">
+        <img src="tulossapian.png" alt="Peli 2 kuva" class="small-image" />
+      </div>
+    </div>
 
     <!-- Alatunniste -->
     <footer>
@@ -48,12 +58,11 @@
         <img src="taipelit1.png" alt="Logo" />
       </div>
       <div class="footer-text">
-        <p>Tekstiä | Tekstiä | Tekstiä | Tekstiä | Tekstiä</p>
+        <p>Copyright © 2024 TAI Pelit Oy</p>
       </div>
     </footer>
 
     <script>
-      // Tarkista, onko käyttäjä kirjautuneena
       document.addEventListener("DOMContentLoaded", function () {
         const storedUsername = localStorage.getItem("username");
         const profileLink = document.getElementById("profileLink");

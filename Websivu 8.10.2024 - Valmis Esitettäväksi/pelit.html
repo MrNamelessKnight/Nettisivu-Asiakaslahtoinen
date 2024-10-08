@@ -4,29 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAI Pelit Oy</title>
-    <link rel="stylesheet" href="etusivu.css" />
-    <style>
-      canvas {
-        background-color: #000000;
-        display: block;
-        margin: 0 auto;
-        border: 2px solid #000000;
-      }
-      body {
-        text-align: center;
-        font-family: Arial, sans-serif;
-      }
-      #scoreDisplay {
-        font-size: 24px;
-        margin-bottom: 10px;
-        font-weight: bold;
-      }
-      #instructions {
-        font-size: 17.7px;
-        margin-top: 10px;
-        color: gray;
-      }
-    </style>
+    <link rel="stylesheet" href="pelit.css" />
+    <style></style>
   </head>
   <body>
     <!-- Yläpalkki -->
@@ -48,12 +27,15 @@
       </div>
     </header>
 
-    <!-- Main content section -->
+    <!-- Pääsisältöosio -->
     <main>
-      <h1>Mato Peli</h1>
       <p id="scoreDisplay">Pisteet: 0</p>
       <canvas id="gameCanvas" width="1200" height="1200"></canvas>
-      <p id="instructions">Käytä nuolinäppäimiä liikkuaksesi | Paina 'R' aloittaaksesi alusta | Paina 'P' laittaaksesi peli tauolle</p>
+      <p id="instructions">
+        Käytä ⬆️ ⬇️ ⬅️ ➡️ nuolinäppäimiä liikkuaksesi <br />
+        Paina 'R' aloittaaksesi alusta <br />
+        Paina 'P' laittaaksesi peli tauolle
+      </p>
     </main>
 
     <!-- Alatunniste -->
@@ -62,11 +44,11 @@
         <img src="taipelit1.png" alt="Logo" />
       </div>
       <div class="footer-text">
-        <p>Tekstiä | Tekstiä | Tekstiä | Tekstiä | Tekstiä</p>
+        <p>Copyright © 2024 TAI Pelit Oy</p>
       </div>
     </footer>
 
-    <!-- Sisällytä JavaScript Snake Game -->
+    <!-- Sisällytä JavaScript Matopeli -->
     <script src="matopeli.js"></script>
 
     <script>

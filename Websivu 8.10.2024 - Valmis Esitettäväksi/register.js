@@ -14,7 +14,7 @@ document
     alert("Rekisteröinti onnistui! Voit nyt kirjautua sisään.");
   });
 
-// Handle form submission
+// Käsittele lomakkeen lähetys
 const registerForm = document.getElementById("registerForm");
 
 registerForm.addEventListener("submit", function (event) {
@@ -24,11 +24,11 @@ registerForm.addEventListener("submit", function (event) {
   const email = document.getElementById("reg-email").value;
   const password = document.getElementById("reg-password").value;
 
-  // Store user data (in localStorage for now)
+  // Tallenna käyttäjätiedot (toistaiseksi localStorageen)
   localStorage.setItem("username", username);
   localStorage.setItem("email", email);
   localStorage.setItem("password", password);
 
   alert("Rekisteröinti onnistui! Voit nyt kirjautua sisään.");
-  window.location.href = "profiili.html"; // Redirect to login page
+  window.location.href = "profiili.html"; // Ohjaa kirjautumissivulle
 });

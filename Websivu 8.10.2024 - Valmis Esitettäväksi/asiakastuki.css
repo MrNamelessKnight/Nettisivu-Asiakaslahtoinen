@@ -198,3 +198,22 @@ footer {
     flex-direction: column;
   }
 }
+
+/* Profiili-linkki-tyylit */
+.profile-link {
+  margin-left: 20px;
+}
+
+.profile-link a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-link a:hover {
+  background-color: #ffcc00;
+  color: #000;
+}

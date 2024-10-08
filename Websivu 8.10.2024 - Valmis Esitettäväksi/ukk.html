@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usein kysytyt kysymykset (UKK)</title>
+    <link rel="stylesheet" href="ukk.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="taipelit1.png" alt="Logo" />
+      </div>
+      <nav>
+        <div class="profile-link">
+          <a href="profiili.html">Profiili</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Usein kysytyt kysymykset (UKK)</h1>
+      <div class="faq-section">
+        <div class="faq-item">
+          <h2 onclick="toggleAnswer('q1')">
+            Kysymys 1: Kuinka voin tilata tuotteen? &#x25BC;
+          </h2>
+          <p id="q1" style="display: none">
+            Voit tilata tuotteen verkkokauppamme kautta lisäämällä tuotteen
+            ostoskoriin ja seuraamalla kassalla annettuja ohjeita.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2 onclick="toggleAnswer('q2')">
+            Kysymys 2: Mikä on toimitusaika? &#x25BC;
+          </h2>
+          <p id="q2" style="display: none">
+            Toimitusaika riippuu valitsemastasi toimitustavasta. Tavallinen
+            toimitus kestää 3-5 arkipäivää.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2 onclick="toggleAnswer('q3')">
+            Kysymys 3: Voinko palauttaa tuotteen? &#x25BC;
+          </h2>
+          <p id="q3" style="display: none">
+            Kyllä, sinulla on 14 päivän palautusoikeus, jos tuote on käyttämätön
+            ja alkuperäisessä kunnossa.
+          </p>
+        </div>
+      </div>
+      <div class="guide-link">
+        <a href="asiakastuki.html" class="back-link"
+          >Takaisin asiakastuki sivulle</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="taipelit1.png" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        <p>Copyright © 2024 TAI Pelit Oy</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleAnswer(id) {
+        const answer = document.getElementById(id);
+        answer.style.display =
+          answer.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
